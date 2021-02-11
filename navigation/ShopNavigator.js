@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 
 export default () => {
   return (
-    <Stack.Navigator creenOptions={{
+    <Stack.Navigator screenOptions={{
       headerStyle: {
         backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
       },
