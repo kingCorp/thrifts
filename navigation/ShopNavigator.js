@@ -13,12 +13,13 @@ export default () => {
   return (
     <Stack.Navigator screenOptions={{
       headerStyle: {
-        backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
+        backgroundColor: Platform.OS === 'android' ? Colors.primary : '',
+        fontFamily: 'open-sans-bold',
       },
       headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
   }}>
-      <Stack.Screen name='All products' component={ProductsOverviewScreen} />
-      <Stack.Screen name="Prod" component={ProductDetails} />
+      <Stack.Screen name='Allproducts' component={ProductsOverviewScreen} options={{ title: 'All Products' }} />
+      <Stack.Screen name="ProductDetails" component={ProductDetails} options={({ route }) => ({ title: route.params.title })}/>
     </Stack.Navigator>
   )
 };

@@ -15,17 +15,13 @@ const ProductsOverviewScreen = props => {
           image={itemData.item.imageUrl}
           title={itemData.item.title}
           price={itemData.item.price}
-          onViewDetails={() => {}}
+          onViewDetails={() => { props.navigation.navigate('ProductDetails', {productId: itemData.item.id, title: itemData.item.title})}}
           onAddCart={() => {}}
         />
       }
     />
     </>
   );
-};
-
-ProductsOverviewScreen.navigationOptions = {
-  headerTitle: 'All Products'
 };
 
 export default ProductsOverviewScreen;
