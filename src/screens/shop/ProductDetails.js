@@ -29,14 +29,14 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         marginVertical: 4,
-        fontFamily: 'open-sans-bold',
+        fontFamily: 'OpenSans-Bold',
     },
     price: {
         fontSize: 20,
         color: '#888',
         textAlign: 'center',
         marginVertical: 20,
-        fontFamily: 'open-sans-bold',
+        fontFamily: 'OpenSans-Bold',
     },
     actions: {
         marginVertical: 10,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 14,
         marginHorizontal: 20,
-        fontFamily: 'open-sans',
+        fontFamily: 'OpenSans-Bold',
     },
 });
 

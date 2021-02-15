@@ -14,7 +14,8 @@ export default () => {
     <Stack.Navigator screenOptions={{
       headerStyle: {
         backgroundColor: Platform.OS === 'android' ? Colors.primary : '',
-        fontFamily: 'open-sans-bold',
+        // fontWeight: '200',
+        // fontFamily: 'OpenSans-Bold',
       },
       headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
   }}>
